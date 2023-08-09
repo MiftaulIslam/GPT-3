@@ -1,0 +1,70 @@
+/* Feature Title Styling */
+.feature_title h1 {
+  font-family: var(--font-family);
+  font-size: 34px;
+  font-weight: 800;
+  background: #ae67fa;
+  background: linear-gradient(to right, #ae67fa 0%, #f49867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 70%;
+}
+.feature_title p {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-subtext);
+  margin: 2rem 0;
+}
+/* Feature items Styling */
+.feature_items {
+    display: flex;
+    flex-direction: column;
+}
+.feature_item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowwrap;
+    margin: 1rem 0;
+}
+.feature_item_title {
+    margin-right: 3em;
+}
+.feature_item_description {
+    min-width: 21rem;
+    max-width: 24rem;
+}
+.feature_item_title h3 {
+    width: 11rem;
+    font-family: var(--font-family);
+font-size: 18px;
+font-weight: 800;
+
+
+}
+.feature_item_description p {
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+
+@media screen and (width < 1150px) {
+    .feature_item {
+        flex-wrap: wrap;
+    }
+    .feature_title h1 {
+        max-width: 85%;
+    }
+}
+@media screen and (width < 1000px) {
+  .feature_title h1 {
+    font-size: 34px;
+    max-width: 100%;
+  }
+}
+@media screen and (width < 600px) {
+  .feature_title {
+ text-align: center;
+  }
+}

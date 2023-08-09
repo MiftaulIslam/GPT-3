@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { useEffect} from "react";
+import {useSelector } from 'react-redux'
+import { Navbar,Blog,Earlyaccess,Header,Whatgpt,Feature,Footer } from "./content";
+import "./App.css";
 
 function App() {
+  const mode = useSelector(state => state.modetogging.mode)
+  useEffect(() => {
+    document.body.setAttribute('data-bd-mode',mode)
+  }, [mode]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className={`main ${mode==="dark"?"gradient__bg":"gradient_light_bg"}`}>
+        <Navbar />
+       
+        <Header/>
+      </div>
+      <Whatgpt/>
+      <Feature/>
+      <Earlyaccess/>
+      <Blog/>
+      <Footer/>
+    </>
   );
 }
 

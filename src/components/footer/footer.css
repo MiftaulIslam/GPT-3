@@ -1,0 +1,63 @@
+.footer_section{
+    background: var(--color-blog);
+}
+.footer_section_title {
+    text-align: center;
+    padding: 5rem 0;
+}
+.footer_section_title h1 {
+    background: linear-gradient(to right, #ae67fa 0%, #f49867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var( --font-family);
+    font-weight: 800;
+    font-size: 62px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 3rem;
+    min-width: 10rem;
+    max-width: 55rem;
+}
+.footer_section_title a{
+color: #fff;
+border: 1px solid #FFF;
+padding: 1rem;
+}
+.footer_section_copyright_title h1{
+    color: #FFF;
+    font-family: var(--font-family);
+}
+.footer_section_copyright_title p{
+    color: #FFF;
+    font-family: var(--font-family);
+    max-width: 16rem;
+}
+.footer_section_menus{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_section_menubar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer_section_menubar h4{
+    color: #FFF;
+    font-family: Gilroy-Medium;
+}
+.footer_section_menubar a{
+    color: #fff;
+text-decoration: none;
+font-family: Gilroy-Medium;
+font-size: 1rem;
+padding: 0.2rem 0;
+
+}
+.footer_section_copyright{
+    font-family: Gilroy-Medium;
+    font-size: 12px;
+    padding: 1rem 0;
+}

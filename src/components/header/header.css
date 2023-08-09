@@ -1,0 +1,112 @@
+h1,
+h2,
+h3,
+p,
+button {
+  font-family: var(--font-family);
+}
+.header_section_text h2 {
+  font-weight: 800;
+  font-size: 4em;
+  background: #ae67fa;
+  background: linear-gradient(to right, #ae67fa 0%, #f49867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header_section_text p {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+.header_section_input {
+  display: flex;
+  flex-direction: row;
+}
+.header_section_input input {
+  padding: 16.5px 10px;
+  width: 80%;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 400;
+  background: var(--color-blog);
+  color: var(--color-text);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.header_section_input button {
+    background: #FF4820;
+    outline: none;
+    border: none;
+  border-radius: 5px;
+  width: 20%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #fff;
+}
+.header_section_text{
+    align-self: center;
+}
+.header_image{
+    align-self: center;
+    text-align: center;
+}
+.header_image img{
+width: 75%;
+}
+/* Icons */
+.brands{
+  
+}
+.brand_icons{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.icon{
+min-width: 100px;
+max-width: 150px;
+margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon img{
+  width: 100%;
+}
+.header_section_text h2 {
+  font-weight: 800;
+  font-size: 4em;
+  background: #ae67fa;
+  background: linear-gradient(to right, #ae67fa 0%, #f49867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (width < 500px) {
+  .header_section_text h2 {
+    font-size: 2em;
+  }
+  .header_section_input {
+    display: flex;
+    flex-direction: column;
+  }
+  .header_section_input input {
+    width: 100%;
+  }
+  .header_section_input button {
+    width: 45%;
+    align-self: center;
+    padding: 0.5rem;
+    display: inline-block;
+    margin: 0.5em 0;
+}
+}
